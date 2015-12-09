@@ -237,7 +237,36 @@ header#header {
   height:$height;
   background:#000 fixed top center ;
   @include vertical_center_padding($height, 402px );
+  h2 {
+    color:#ffffff;
+    font-size:40px;
+    span {
+      color: #ffffff;
+      display: block;
+      font-size: 40px;
+      letter-spacing: 2px;
+    }
+    small {
+      color: #ffffff;
+      display: block;
+      font-size: 48px;
+      letter-spacing: 4px;
+    }
+    strong {
+      color: #ffffff;
+      font-size: 60px;
+    }
+  }
+  .btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    font-size: 20px;
+    border-radius: 2px;
+    font-weight: bold !important;
+  }
 }
+
 
 /* 2. Article */
 

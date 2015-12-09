@@ -176,7 +176,7 @@ td, th { padding: 0; }
   .table td, .table th { background-color: #fff !important; }
   /* line 94, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_print.scss */
   .table-bordered th, .table-bordered td { border: 1px solid #ddd !important; } }
-@font-face { font-family: 'Glyphicons Halflings'; src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?1449599629); src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?&1449599629#iefix) format("embedded-opentype"), url(fonts/bootstrap/glyphicons-halflings-regular.woff2?1449599629) format("woff2"), url(fonts/bootstrap/glyphicons-halflings-regular.woff?1449599629) format("woff"), url(fonts/bootstrap/glyphicons-halflings-regular.ttf?1449599629) format("truetype"), url(fonts/bootstrap/glyphicons-halflings-regular.svg?1449599629#glyphicons_halflingsregular) format("svg"); }
+@font-face { font-family: 'Glyphicons Halflings'; src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?1448912041); src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?&1448912041#iefix) format("embedded-opentype"), url(fonts/bootstrap/glyphicons-halflings-regular.woff2?1448912041) format("woff2"), url(fonts/bootstrap/glyphicons-halflings-regular.woff?1448912041) format("woff"), url(fonts/bootstrap/glyphicons-halflings-regular.ttf?1448912041) format("truetype"), url(fonts/bootstrap/glyphicons-halflings-regular.svg?1448912041#glyphicons_halflingsregular) format("svg"); }
 /* line 24, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon { position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -5690,30 +5690,40 @@ h2 { font-size: 54px; }
 /* 1. Header */
 /* line 236, sass/style.scss */
 header#header { height: 768px; background: #000 fixed top center; padding: 183px 0; }
+/* line 240, sass/style.scss */
+header#header h2 { color: #ffffff; font-size: 40px; }
+/* line 243, sass/style.scss */
+header#header h2 span { color: #ffffff; display: block; font-size: 40px; letter-spacing: 2px; }
+/* line 249, sass/style.scss */
+header#header h2 small { color: #ffffff; display: block; font-size: 48px; letter-spacing: 4px; }
+/* line 255, sass/style.scss */
+header#header h2 strong { color: #ffffff; font-size: 60px; }
+/* line 260, sass/style.scss */
+header#header .btn { background-color: transparent; color: white; border: 1px solid; font-size: 20px; border-radius: 2px; font-weight: bold !important; }
 
 /* 2. Article */
 /* 2.1.Cardapio */
-/* line 245, sass/style.scss */
+/* line 274, sass/style.scss */
 section#cardapio { background: #f6f6f6 url("img/patterns.cardapio.png") repeat; }
-/* line 247, sass/style.scss */
+/* line 276, sass/style.scss */
 section#cardapio .container { height: 768px; padding: 154px 0; }
-/* line 252, sass/style.scss */
+/* line 281, sass/style.scss */
 section#cardapio h2 strong { color: #ef443a; }
-/* line 256, sass/style.scss */
+/* line 285, sass/style.scss */
 section#cardapio h3 { color: #ef443a; }
 
 /* 2.2.Sobre */
-/* line 261, sass/style.scss */
+/* line 290, sass/style.scss */
 section#sobre { height: 768px; padding: 199px 0; background: #f6f6f6; }
 
 /* 2.3.Promocoes */
-/* line 267, sass/style.scss */
+/* line 296, sass/style.scss */
 section#promocoes { background: #28282e; height: 768px; padding: 32px 0; }
 
 /* 3.Footer */
-/* line 274, sass/style.scss */
+/* line 303, sass/style.scss */
 footer#footer { background: #28282e; }
-/* line 276, sass/style.scss */
+/* line 305, sass/style.scss */
 footer#footer #localizacao { background: #ef443a; color: #ffffff; }
-/* line 278, sass/style.scss */
+/* line 307, sass/style.scss */
 footer#footer #localizacao .container { height: 90px; padding: 30px 0; }
