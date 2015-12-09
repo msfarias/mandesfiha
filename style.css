@@ -5658,43 +5658,62 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
   .csstransforms .diamonds .content { height: 200px; -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); width: 200px; } }
 
 /* @end */
+/* Fonts */
+@font-face { font-family: Flaticon; src: url(fonts/flaticon.eot); src: url(fonts/flaticon.eot#iefix) format("embedded-opentype"), url(fonts/flaticon.woff) format("woff"), url(fonts/flaticon.ttf) format("truetype"), url(fonts/flaticon.svg) format("svg"); font-weight: normal; font-style: normal; }
+/* line 205, sass/style.scss */
+.flaticon-bebidas:before { content: "\e000"; font-family: Flaticon; }
+
+/* line 209, sass/style.scss */
+.flaticon-esfihas-salgadas:before { content: "\e001"; font-family: Flaticon; }
+
+/* line 213, sass/style.scss */
+.flaticon-esfihas-especiais:before { content: "\e002"; font-family: Flaticon; }
+
+/* line 217, sass/style.scss */
+.flaticon-esfihas-doces:before { content: "\e003"; font-family: Flaticon; }
+
+/* line 221, sass/style.scss */
+.flaticon-sobremesas:before { content: "\e004"; font-family: Flaticon; }
+
 /* classes */
 /* Tags Ajusts */
-/* line 191, sass/style.scss */
+/* line 228, sass/style.scss */
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 194, sass/style.scss */
+/* line 231, sass/style.scss */
 body { overflow-x: hidden; }
 
-/* line 195, sass/style.scss */
+/* line 232, sass/style.scss */
 h2 { font-size: 54px; }
 
 /* 0. Navbar */
 /* 1. Header */
-/* line 199, sass/style.scss */
+/* line 236, sass/style.scss */
 header#header { height: 768px; background: #000 fixed top center; padding: 183px 0; }
 
 /* 2. Article */
 /* 2.1.Cardapio */
-/* line 208, sass/style.scss */
+/* line 245, sass/style.scss */
 section#cardapio { background: #f6f6f6 url("img/patterns.cardapio.png") repeat; }
-/* line 210, sass/style.scss */
+/* line 247, sass/style.scss */
 section#cardapio .container { height: 768px; padding: 154px 0; }
-/* line 215, sass/style.scss */
+/* line 252, sass/style.scss */
 section#cardapio h2 strong { color: #ef443a; }
-/* line 219, sass/style.scss */
+/* line 256, sass/style.scss */
 section#cardapio h3 { color: #ef443a; }
 
 /* 2.2.Sobre */
-/* line 224, sass/style.scss */
+/* line 261, sass/style.scss */
 section#sobre { height: 768px; padding: 199px 0; background: #f6f6f6; }
 
 /* 2.3.Promocoes */
-/* line 230, sass/style.scss */
+/* line 267, sass/style.scss */
 section#promocoes { background: #28282e; height: 768px; padding: 32px 0; }
 
 /* 3.Footer */
-/* line 237, sass/style.scss */
+/* line 274, sass/style.scss */
 footer#footer { background: #28282e; }
-/* line 239, sass/style.scss */
-footer#footer #localizacao { background: #ef443a; height: 90px; padding: 30px 0; color: #ffffff; }
+/* line 276, sass/style.scss */
+footer#footer #localizacao { background: #ef443a; color: #ffffff; }
+/* line 278, sass/style.scss */
+footer#footer #localizacao .container { height: 90px; padding: 30px 0; }

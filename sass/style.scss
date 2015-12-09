@@ -185,6 +185,43 @@ $belowDiamond: '(max-width: 537px)';
   }
 }
 /* @end */
+/* Fonts */
+//fonts
+$font_0: Flaticon;
+  //urls
+$url_0: url(fonts/flaticon.eot);
+$url_1: url(fonts/flaticon.eot#iefix);
+$url_2: url(fonts/flaticon.woff);
+$url_3: url(fonts/flaticon.ttf);
+$url_4: url(fonts/flaticon.svg);
+
+@font-face {
+  font-family: $font_0;
+  src: $url_0;
+  src: $url_1 format("embedded-opentype"), $url_2 format("woff"), $url_3 format("truetype"), $url_4 format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.flaticon-bebidas:before {
+  content: "\e000";
+  font-family: $font_0;
+}
+.flaticon-esfihas-salgadas:before {
+  content: "\e001";
+  font-family: $font_0;
+}
+.flaticon-esfihas-especiais:before {
+  content: "\e002";
+  font-family: $font_0;
+}
+.flaticon-esfihas-doces:before {
+  content: "\e003";
+  font-family: $font_0;
+}
+.flaticon-sobremesas:before {
+  content: "\e004";
+  font-family: $font_0;
+}
 /* classes */
 
 /* Tags Ajusts */
@@ -238,8 +275,10 @@ footer#footer {
   background:#28282e;
   #localizacao {
     background:#ef443a;
-    height:90px;
-    @include vertical_center_padding(90px, 30px );
+    .container {
+      height:90px;
+      @include vertical_center_padding(90px, 30px );
+    }
     color:#ffffff;
   }
 }
