@@ -5691,39 +5691,39 @@ h2 { font-size: 54px; }
 /* line 236, sass/style.scss */
 header#header { height: 768px; background: #000 fixed top center; padding: 183px 0; }
 /* line 240, sass/style.scss */
-header#header h2 { color: #ffffff; font-size: 40px; }
-/* line 243, sass/style.scss */
+header#header h2 { margin-bottom: 40px; color: #ffffff; font-size: 40px; }
+/* line 244, sass/style.scss */
 header#header h2 span { color: #ffffff; display: block; font-size: 40px; letter-spacing: 2px; }
-/* line 249, sass/style.scss */
+/* line 250, sass/style.scss */
 header#header h2 small { color: #ffffff; display: block; font-size: 48px; letter-spacing: 4px; }
-/* line 255, sass/style.scss */
+/* line 256, sass/style.scss */
 header#header h2 strong { color: #ffffff; font-size: 60px; }
-/* line 260, sass/style.scss */
+/* line 261, sass/style.scss */
 header#header .btn { background-color: transparent; color: white; border: 1px solid; font-size: 20px; border-radius: 2px; font-weight: bold !important; }
 
 /* 2. Article */
 /* 2.1.Cardapio */
-/* line 274, sass/style.scss */
+/* line 275, sass/style.scss */
 section#cardapio { background: #f6f6f6 url("img/patterns.cardapio.png") repeat; }
-/* line 276, sass/style.scss */
+/* line 277, sass/style.scss */
 section#cardapio .container { height: 768px; padding: 154px 0; }
-/* line 281, sass/style.scss */
+/* line 282, sass/style.scss */
 section#cardapio h2 strong { color: #ef443a; }
-/* line 285, sass/style.scss */
+/* line 286, sass/style.scss */
 section#cardapio h3 { color: #ef443a; }
 
 /* 2.2.Sobre */
-/* line 290, sass/style.scss */
+/* line 291, sass/style.scss */
 section#sobre { height: 768px; padding: 199px 0; background: #f6f6f6; }
 
 /* 2.3.Promocoes */
-/* line 296, sass/style.scss */
+/* line 297, sass/style.scss */
 section#promocoes { background: #28282e; height: 768px; padding: 32px 0; }
 
 /* 3.Footer */
-/* line 303, sass/style.scss */
+/* line 304, sass/style.scss */
 footer#footer { background: #28282e; }
-/* line 305, sass/style.scss */
+/* line 306, sass/style.scss */
 footer#footer #localizacao { background: #ef443a; color: #ffffff; }
-/* line 307, sass/style.scss */
+/* line 308, sass/style.scss */
 footer#footer #localizacao .container { height: 90px; padding: 30px 0; }

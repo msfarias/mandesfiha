@@ -238,6 +238,7 @@ header#header {
   background:#000 fixed top center ;
   @include vertical_center_padding($height, 402px );
   h2 {
+    margin-bottom: 40px;
     color:#ffffff;
     font-size:40px;
     span {
