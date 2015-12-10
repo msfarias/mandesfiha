@@ -298,6 +298,11 @@ section#promocoes {
   background:#28282e;
   height:$height;
   @include vertical_center_padding($height, 704px );
+  h2{
+    color:#fff;
+  }
+  p{ color:#fff;  margin-bottom: 50px;}
+
 }
 
 /* 3.Footer */
@@ -309,6 +314,32 @@ footer#footer {
       height:90px;
       @include vertical_center_padding(90px, 30px );
     }
+    a {
+      display: block;
+      font-size: 20px;
+      text-transform: none;
+      text-decoration: none;
+      color: #fff;
+    }
     color:#ffffff;
   }
+
+  #contato {
+    li{
+      color: #fff;
+      list-style: none;
+      
+    }
+    p{
+      padding: 50px;
+    }
+    .contato{
+      height: 120px;
+      vertical-align: middle;
+    }
+  }
+
 }
+
+/* 4.Agencia */
+#copy { background: #000000; padding: 10px 0; }

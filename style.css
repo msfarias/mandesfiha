@@ -5719,11 +5719,27 @@ section#sobre { height: 768px; padding: 199px 0; background: #f6f6f6; }
 /* 2.3.Promocoes */
 /* line 297, sass/style.scss */
 section#promocoes { background: #28282e; height: 768px; padding: 32px 0; }
+/* line 301, sass/style.scss */
+section#promocoes h2 { color: #fff; }
+/* line 304, sass/style.scss */
+section#promocoes p { color: #fff; margin-bottom: 50px; }
 
 /* 3.Footer */
-/* line 304, sass/style.scss */
+/* line 309, sass/style.scss */
 footer#footer { background: #28282e; }
-/* line 306, sass/style.scss */
+/* line 311, sass/style.scss */
 footer#footer #localizacao { background: #ef443a; color: #ffffff; }
-/* line 308, sass/style.scss */
+/* line 313, sass/style.scss */
 footer#footer #localizacao .container { height: 90px; padding: 30px 0; }
+/* line 317, sass/style.scss */
+footer#footer #localizacao a { display: block; font-size: 20px; text-transform: none; text-decoration: none; color: #fff; }
+/* line 328, sass/style.scss */
+footer#footer #contato li { color: #fff; list-style: none; }
+/* line 333, sass/style.scss */
+footer#footer #contato p { padding: 50px; }
+/* line 336, sass/style.scss */
+footer#footer #contato .contato { height: 120px; vertical-align: middle; }
+
+/* 4.Agencia */
+/* line 345, sass/style.scss */
+#copy { background: #000000; padding: 10px 0; }
