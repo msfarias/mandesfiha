@@ -302,7 +302,15 @@ section#promocoes {
     color:#fff;
   }
   p{ color:#fff;  margin-bottom: 50px;}
-
+  .carousel-indicators{
+    bottom: -31px;
+    li{
+      background-color: #1E1D22 ;
+      &.active {
+        background-color: #ffffff;
+      }
+      border-color: #28282e;}
+    }
 }
 
 /* 3.Footer */
