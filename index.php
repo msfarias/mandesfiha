@@ -1,29 +1,29 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="" xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="" xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="" xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="" xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR"> <!--<![endif]-->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="<?php bloginfo('language') ?>" xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="<?php bloginfo('language') ?>" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php bloginfo('language') ?>"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="<?php bloginfo('language') ?>" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php bloginfo('language') ?>"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="<?php bloginfo('language') ?>" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php bloginfo('language') ?>"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!--SEO-->
-    <title>Mandesfiha</title>
-    <meta name="description" property="og:description" content="">
-    <meta name="keywords" content="">
+    <title><?php the_SEO('title', get_the_ID()) ?></title>
+    <meta name="description" property="og:description" content="<?php the_SEO('description', get_the_ID()) ?>">
+    <meta name="keywords" content="<?php the_SEO('description', get_the_ID()) ?>">
     <!--Metatags facebook-->
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="<?php bloginfo('language') ?>">
     <meta property="og:url" content="">
-    <meta property="og:title" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:image" content="">
+    <meta property="og:title" content="<?php the_SEO('title', get_the_ID()) ?>">
+    <meta property="og:site_name" content="<?php the_SEO('title', get_the_ID()) ?>">
+    <meta property="og:image" content="<?php echo get_template_directory_uri().'/'; ?>img/mandaesfiha.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--icons-->
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri().'/'; ?>img/favicon.ico">
+    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri().'/'; ?>img/apple-touch-icon.png">
     <!--.css-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/'; ?>style.css">
     <!--.js-->
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="<?php echo get_template_directory_uri().'/'; ?>js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
   <body role="document">
     <header id="header" role="presentation" style="background-image:url('img/header.jpg')">
@@ -41,7 +41,7 @@
 
           </div>
           <a href="" class="col-md-4">
-            <img src="img/mandaesfiha.png" alt="logo" class="logo">
+            <img src="<?php echo get_template_directory_uri().'/'; ?>img/mandaesfiha.png" alt="logo" class="logo">
           </a>
         </div>
         <div class="col-md-1">
@@ -57,119 +57,79 @@
                 <h2>Veja o nosso
                   <strong class="text-uppercase"> Cardapio</strong>
                 </h2>
-
-                <p>lorem</p>
+                <p></p>
               </div>
               <div class="col-md-7">
                 <ul class="nav-diamonds diamonds" role="tablist">
-                  <li class="active">
-                    <a href="#especiais" role="tab" data-toggle="tab" class="diamond">
-                      <div class="content">
-                        <h4>
-                          <i class="fa flaticon-esfihas-especiais"></i> Esfihas Especiais
-                        </h4>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#salgadas" role="tab" data-toggle="tab" class="diamond">
-                      <div class="content">
-                        <h4>
-                          <i class="fa flaticon-esfihas-salgadas"></i> Esfihas Salgadas
-                        </h4>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#doces" role="tab" data-toggle="tab" class="diamond">
-                      <div class="content">
-                        <h4>
-                          <i class="fa flaticon-esfihas-doces"></i>  Esfihas Doces
-                        </h4>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#sobremesas" role="tab" data-toggle="tab" class="diamond">
-                      <div class="content">
-                        <h4>
-                          <i class="fa flaticon-sobremesas"></i>  Sobremesas
-                        </h4>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#bebidas" role="tab" data-toggle="tab" class="diamond">
-                      <div class="content">
-                        <h4>
-                          <i class="fa flaticon-bebidas">  </i> Bebidas
-                        </h4>
-                      </div>
-                    </a>
-                  </li>
+                  <?php
+                    $index = 0;
+                  $post_type = 'cardapio';
+                  $Query = new WP_Query(array('post_type' => $post_type, 'post_status' => 'publish', 'posts_per_page' => -1));
+                  if ($Query->have_posts()) { while ($Query->have_posts()) : $Query->the_post();
+                    $index++
+                  ?>
+                    <li class="<?php if($index == 1){ echo 'active'; } ?>">
+                      <a href="#<?php the_slug(); ?>" role="tab" data-toggle="tab" class="diamond">
+                        <div class="content">
+                          <h4>
+                            <i class="fa flaticon-<?php the_slug(); ?>"></i> <?php the_title(); ?>
+                          </h4>
+                        </div>
+                      </a>
+                    </li>
+                  <?php endwhile; }  wp_reset_query(); ?>
+
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <div class="tab-content">
-          <div class="active tab-pane fade in" id="especiais">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <h3><i class="fa fa-3x flaticon-esfihas-especiais"></i> Esfihas Especiais</h3>
+          <?php
+            $index = 0;
+            $post_type = 'cardapio';
+            $Query = new WP_Query(array('post_type' => $post_type, 'post_status' => 'publish', 'posts_per_page' => -1));
+            if ($Query->have_posts()) { while ($Query->have_posts()) : $Query->the_post();
+            $index++
+          ?>
+            <div class="<?php if($index == 1){ echo 'active'; } ?> tab-pane fade in" id="<?php the_slug(); ?>">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3><i class="fa fa-3x flaticon-<?php the_slug(); ?>"></i> Esfihas Especiais</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <?php the_content(); ?>
                 </div>
               </div>
-              <div class="row">
-                <ul class="col-md-4 list-unstyled">
-                  <li>
-                    <h4>Produto</h4>
-                    <p>Descricao</p>
-                    <p class="price pull-right" >R$ 00,00</p>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
-          <div class=" tab-pane fade" id="salgadas">
-            <div class="container">
-              <div class="row"></div>
-            </div>
-          </div>
-          <div class=" tab-pane fade" id="doces">
-            <div class="container">
-              <div class="row"></div>
-            </div>
-          </div>
-          <div class=" tab-pane fade" id="sobremesas">
-            <div class="container">
-              <div class="row"></div>
-            </div>
-          </div>
-          <div class=" tab-pane fade" id="bebidas">
-            <div class="container">
-              <div class="row"></div>
-            </div>
-          </div>
+          <?php endwhile; }  wp_reset_query(); ?>
         </div>
       </section>
       <section id="sobre">
         <div class="container">
           <div class="row">
             <div class="col-md-5">
-              <h2>Sobre nos</h2>
-              <p>A zona sul de Porto Alegre acaba de ganhar uma nova e ótima possibilidade de fast food em casa, MANDESFIHA, vendemos esfihas abertas dos mais variados sabores, são mais de 15 no total, oferecemos sabores salgados, doces e agridoces.</p>
-              <p>
-                 Mandesfiha na tua casa, com os amigos ou até mesmo sozinho.
-              </p>
-              <p>Experimente o novo, é gostoso mudar... </p>
+              <?php
+                $pagename = 'sobre';
+                $Query = new WP_Query( array('post_type' => 'page','pagename' => $pagename, 'posts_per_page'=> 1 ));
+                if ( $Query->have_posts() ) : while ( $Query->have_posts() ) : $Query->the_post();
+              ?>
+                  <h2><?php the_title() ?></h2>
+                  <div class="entry">
+                    <?php the_content(); ?>
+                  </div>
+              <?php endwhile; endif; wp_reset_query(); ?>
+
+
             </div>
             <div class="col-md-2">
 
             </div>
             <figure class="col-md-4">
               <a href="" class="">
-                <img src="img/mandesfiha.png" alt="Mandesfiha" class="img-responsive">
+                <img src="<?php echo get_template_directory_uri().'/'; ?>img/mandesfiha.png" alt="Mandesfiha" class="img-responsive">
               </a>
             </figure>
             <div class="col-md-1">
@@ -193,26 +153,31 @@
               <div id="slides" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                  <li data-target="#slides" data-slide-to="0" class="active"></li>
-                  <li data-target="#slides" data-slide-to="1"></li>
-
+                  <?php
+                    $index = 0;
+                    $post_type = 'slides';
+                    $Query = new WP_Query(array('post_type' => $post_type, 'post_status' => 'publish', 'posts_per_page' => -1));
+                    if ($Query->have_posts()) { while ($Query->have_posts()) : $Query->the_post();
+                      $index++;
+                  ?>
+                    <li data-target="#slides" data-slide-to="<?php echo $index; ?>" class="<?php if($index == 1){ echo 'active'; } ?>"></li>
+                  <?php endwhile; }  wp_reset_query(); ?>
                 </ol>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <img src="img/header.jpg" alt="...">
-        
-                    <div class="carousel-caption">
+                  <?php
+                    $index = 0;
+                    $post_type = 'slides';
+                    $Query = new WP_Query(array('post_type' => $post_type, 'post_status' => 'publish', 'posts_per_page' => -1));
+                    if ($Query->have_posts()) { while ($Query->have_posts()) : $Query->the_post();
+                    $index++;
+                  ?>
+                    <div class="item active">
+                      <img src="<?php the_image_src(); ?>" alt="<?php the_title() ?>" >
+                      <div class="carousel-caption">
+                      </div>
                     </div>
-                  </div>
-                  <div class="item">
-                    <img src="img/bg-bebidas.jpg" alt="...">
-        
-                    <div class="carousel-caption">
-
-                    </div>
-                  </div>
-                  ...
+                  <?php endwhile; }  wp_reset_query(); ?>
                 </div>
               </div>
             </div>
@@ -274,10 +239,10 @@
     </section>
     <!--.js-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="js/vendor/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri().'/'; ?>js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="<?php echo get_template_directory_uri().'/'; ?>js/vendor/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script src="<?php echo get_template_directory_uri().'/'; ?>js/plugins.js"></script>
+    <script src="<?php echo get_template_directory_uri().'/'; ?>js/main.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (
