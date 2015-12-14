@@ -176,7 +176,7 @@ td, th { padding: 0; }
   .table td, .table th { background-color: #fff !important; }
   /* line 94, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_print.scss */
   .table-bordered th, .table-bordered td { border: 1px solid #ddd !important; } }
-@font-face { font-family: 'Glyphicons Halflings'; src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?1449599629); src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?&1449599629#iefix) format("embedded-opentype"), url(fonts/bootstrap/glyphicons-halflings-regular.woff2?1449599629) format("woff2"), url(fonts/bootstrap/glyphicons-halflings-regular.woff?1449599629) format("woff"), url(fonts/bootstrap/glyphicons-halflings-regular.ttf?1449599629) format("truetype"), url(fonts/bootstrap/glyphicons-halflings-regular.svg?1449599629#glyphicons_halflingsregular) format("svg"); }
+@font-face { font-family: 'Glyphicons Halflings'; src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?1448912041); src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?&1448912041#iefix) format("embedded-opentype"), url(fonts/bootstrap/glyphicons-halflings-regular.woff2?1448912041) format("woff2"), url(fonts/bootstrap/glyphicons-halflings-regular.woff?1448912041) format("woff"), url(fonts/bootstrap/glyphicons-halflings-regular.ttf?1448912041) format("truetype"), url(fonts/bootstrap/glyphicons-halflings-regular.svg?1448912041#glyphicons_halflingsregular) format("svg"); }
 /* line 24, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon { position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -5688,78 +5688,81 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .flaticon-sobremesas:before { content: "\e004"; font-family: Flaticon; }
 
 /* classes */
+/* line 274, sass/style.scss */
+.bg-paralax { position: absolute; top: 0; left: 0; height: 100%; bottom: 0; right: 0; width: 100%; z-index: 1; }
+
 /* Tags Ajusts */
-/* line 276, sass/style.scss */
+/* line 285, sass/style.scss */
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 279, sass/style.scss */
+/* line 288, sass/style.scss */
 body { overflow-x: hidden; }
 
-/* line 280, sass/style.scss */
+/* line 289, sass/style.scss */
 h2 { font-size: 54px; }
 
 /* 0. Navbar */
 /* 1. Header */
-/* line 284, sass/style.scss */
+/* line 293, sass/style.scss */
 header#header { height: 768px; background: #000 fixed top center; padding: 183px 0; }
-/* line 288, sass/style.scss */
+/* line 297, sass/style.scss */
 header#header h2 { margin-bottom: 40px; color: #ffffff; font-size: 40px; }
-/* line 292, sass/style.scss */
+/* line 301, sass/style.scss */
 header#header h2 span { color: #ffffff; display: block; font-size: 40px; letter-spacing: 2px; }
-/* line 298, sass/style.scss */
+/* line 307, sass/style.scss */
 header#header h2 small { color: #ffffff; display: block; font-size: 48px; letter-spacing: 4px; }
-/* line 304, sass/style.scss */
+/* line 313, sass/style.scss */
 header#header h2 strong { color: #ffffff; font-size: 60px; }
-/* line 309, sass/style.scss */
+/* line 318, sass/style.scss */
 header#header .btn { background-color: transparent; color: white; border: 1px solid; font-size: 20px; border-radius: 2px; font-weight: bold !important; }
 
 /* 2. Article */
 /* 2.1.Cardapio */
-/* line 323, sass/style.scss */
-section#cardapio { background: #f6f6f6 url("img/patterns.cardapio.png") repeat; }
-/* line 326, sass/style.scss */
-section#cardapio .diamonds-tabs .container { height: 384px; padding: 117px 0; }
 /* line 332, sass/style.scss */
+section#cardapio { background: #f6f6f6 url("img/patterns.cardapio.png") repeat; }
+/* line 335, sass/style.scss */
+section#cardapio .diamonds-tabs .container { height: 384px; padding: 117px 0; }
+/* line 341, sass/style.scss */
 section#cardapio .tab-content .container { height: 768px; padding: 309px 0; }
-/* line 338, sass/style.scss */
+/* line 347, sass/style.scss */
 section#cardapio h2 strong { color: #ef443a; }
-/* line 342, sass/style.scss */
+/* line 351, sass/style.scss */
 section#cardapio h3 { color: #ef443a; }
 
 /* 2.2.Sobre */
-/* line 347, sass/style.scss */
+/* line 356, sass/style.scss */
 section#sobre { height: 768px; padding: 199px 0; background: #f6f6f6; }
 
 /* 2.3.Promocoes */
-/* line 353, sass/style.scss */
+/* line 362, sass/style.scss */
 section#promocoes { background: #28282e; height: 768px; padding: 32px 0; }
-/* line 357, sass/style.scss */
+/* line 366, sass/style.scss */
 section#promocoes h2 { color: #fff; }
-/* line 360, sass/style.scss */
+/* line 369, sass/style.scss */
 section#promocoes p { color: #fff; margin-bottom: 50px; }
-/* line 361, sass/style.scss */
+/* line 370, sass/style.scss */
 section#promocoes .carousel-indicators { bottom: -31px; }
-/* line 363, sass/style.scss */
+/* line 372, sass/style.scss */
 section#promocoes .carousel-indicators li { background-color: #1E1D22; border-color: #28282e; }
-/* line 365, sass/style.scss */
+/* line 374, sass/style.scss */
 section#promocoes .carousel-indicators li.active { background-color: #ffffff; }
 
 /* 3.Footer */
-/* line 373, sass/style.scss */
+/* line 382, sass/style.scss */
 footer#footer { background: #28282e; }
-/* line 375, sass/style.scss */
+/* line 384, sass/style.scss */
 footer#footer #localizacao { background: #ef443a; color: #ffffff; }
-/* line 377, sass/style.scss */
+/* line 386, sass/style.scss */
 footer#footer #localizacao .container { height: 90px; padding: 30px 0; }
-/* line 381, sass/style.scss */
+/* line 390, sass/style.scss */
 footer#footer #localizacao a { display: block; font-size: 20px; text-transform: none; text-decoration: none; color: #fff; }
-/* line 392, sass/style.scss */
+/* line 401, sass/style.scss */
 footer#footer #contato li { color: #fff; list-style: none; }
-/* line 397, sass/style.scss */
+/* line 406, sass/style.scss */
 footer#footer #contato p { padding: 50px; }
-/* line 400, sass/style.scss */
+/* line 409, sass/style.scss */
 footer#footer #contato .contato { height: 120px; vertical-align: middle; }
 
 /* 4.Agencia */
-/* line 409, sass/style.scss */
+/* line 418, sass/style.scss */
 #copy { background: #000000; padding: 10px 0; }

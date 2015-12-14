@@ -86,13 +86,15 @@
         </div>
         <div class="tab-content">
           <?php
-            $index = 0;
+            $i = 0;
             $post_type = 'cardapio';
             $Query = new WP_Query(array('post_type' => $post_type, 'post_status' => 'publish', 'posts_per_page' => -1));
             if ($Query->have_posts()) { while ($Query->have_posts()) : $Query->the_post();
-            $index++
+              $i++;
           ?>
-            <div class="<?php if($index == 1){ echo 'active'; } ?> tab-pane fade in" id="<?php the_slug(); ?>">
+            <div class="<?php if($i == 1){ echo 'active'; } ?> tab-pane fade in" id="<?php the_slug(); ?>" >
+
+              <div class="bg-paralax" style="background-image: url('<?php echo get_post_meta( get_the_ID(), 'wpcf-bg-parallax', true ); ?>');"></div>
               <div class="container">
                 <div class="row">
                   <div class="col-md-12">
@@ -172,7 +174,7 @@
                     if ($Query->have_posts()) { while ($Query->have_posts()) : $Query->the_post();
                     $index++;
                   ?>
-                    <div class="item active">
+                    <div class="item <?php if($index == 1){ echo 'active'; } ?>">
                       <img src="<?php the_image_src(); ?>" alt="<?php the_title() ?>" >
                       <div class="carousel-caption">
                       </div>

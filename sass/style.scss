@@ -271,7 +271,16 @@ $url_4: url(fonts/flaticon.svg);
   font-family: $font_0;
 }
 /* classes */
-
+.bg-paralax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
 /* Tags Ajusts */
 * {
   @include box-sizing(border-box);
