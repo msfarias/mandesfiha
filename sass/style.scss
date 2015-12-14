@@ -24,6 +24,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "../js/vendor/font-awesome/scss/font-awesome";
 // Import animate css
 @import "js/vendor/animate.css/animate.min.css";
+// Import vegas js css
+@import "js/vendor/vegas/dist/vegas.min.css";
 /* ==========================================================================
    Matheus Farias-
    ========================================================================== */
@@ -279,7 +281,24 @@ $url_4: url(fonts/flaticon.svg);
   bottom: 0;
   right: 0;
   width: 100%;
-  z-index: 1;
+  z-index:0;
+}
+.product-list {
+  ul{
+    list-style:none;
+    li{
+      margin:15px 0;
+      h4{
+        color:#ffffff;
+      }
+      p{
+        color:#ffffff;
+        span {
+          color:#ffffff;
+        }
+      }
+    }
+  }
 }
 /* Tags Ajusts */
 * {
@@ -318,9 +337,10 @@ header#header {
   .btn {
     background-color: transparent;
     color: white;
-    border: 1px solid;
+    border: 1px solid #ffffff;
+    padding:7px 25px;
+    @include border-radius(0px);
     font-size: 20px;
-    border-radius: 2px;
     font-weight: bold !important;
   }
 }
@@ -333,16 +353,19 @@ section#cardapio {
   background:$bg-white url('img/patterns.cardapio.png') repeat;
   .diamonds-tabs {
     .container {
-      height:( $height / 2 );
-      @include vertical_center_padding(( $height / 2 ), 150px );
+       @include vertical_center_padding(400px, 150px );
     }
   }
-  .tab-content {
-    .container {
-      height:$height;
-      @include vertical_center_padding($height, 150px );
+  .tab-content{
+
+    .tab-pane {
+      position:relative;
+      top:0;
+      left:0;
+      @include vertical_center_padding(($height/2), 150px );
     }
   }
+
   h2 {
     strong {
       color:$color-red;
@@ -350,7 +373,12 @@ section#cardapio {
   }
   h3 {
     color:$color-red;
+    font-size:34px;
+    i {
+       font-size:100%;
+    }
   }
+
 }
 /* 2.2.Sobre */
 section#sobre {
@@ -398,13 +426,17 @@ footer#footer {
   }
 
   #contato {
+    padding:20px 0;
     li{
       color: #fff;
       list-style: none;
-      
     }
     p{
-      padding: 50px;
+      margin:0;
+      padding:0;
+    }
+    a {
+      color:#ffffff;
     }
     .contato{
       height: 120px;

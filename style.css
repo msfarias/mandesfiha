@@ -21,6 +21,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(js/vendor/animate.css/animate.min.css);
+@import url(js/vendor/vegas/dist/vegas.min.css);
 /* line 9, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
@@ -176,7 +177,7 @@ td, th { padding: 0; }
   .table td, .table th { background-color: #fff !important; }
   /* line 94, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_print.scss */
   .table-bordered th, .table-bordered td { border: 1px solid #ddd !important; } }
-@font-face { font-family: 'Glyphicons Halflings'; src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?1448912041); src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?&1448912041#iefix) format("embedded-opentype"), url(fonts/bootstrap/glyphicons-halflings-regular.woff2?1448912041) format("woff2"), url(fonts/bootstrap/glyphicons-halflings-regular.woff?1448912041) format("woff"), url(fonts/bootstrap/glyphicons-halflings-regular.ttf?1448912041) format("truetype"), url(fonts/bootstrap/glyphicons-halflings-regular.svg?1448912041#glyphicons_halflingsregular) format("svg"); }
+@font-face { font-family: 'Glyphicons Halflings'; src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?1449599629); src: url(fonts/bootstrap/glyphicons-halflings-regular.eot?&1449599629#iefix) format("embedded-opentype"), url(fonts/bootstrap/glyphicons-halflings-regular.woff2?1449599629) format("woff2"), url(fonts/bootstrap/glyphicons-halflings-regular.woff?1449599629) format("woff"), url(fonts/bootstrap/glyphicons-halflings-regular.ttf?1449599629) format("truetype"), url(fonts/bootstrap/glyphicons-halflings-regular.svg?1449599629#glyphicons_halflingsregular) format("svg"); }
 /* line 24, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon { position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -5602,167 +5603,184 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 /* @group mixins */
 /* @end */
 /* @group diamonds */
-/* line 138, sass/style.scss */
+/* line 140, sass/style.scss */
 .diamonds { font-size: 0; margin: 40px auto; }
-@media only screen and (min-width: 1348px) { /* line 108, sass/style.scss */
+@media only screen and (min-width: 1348px) { /* line 110, sass/style.scss */
   .csstransforms .diamonds { max-width: 830px; }
-  /* line 112, sass/style.scss */
+  /* line 114, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(2n+4) { margin-left: 100px; }
-  /* line 116, sass/style.scss */
+  /* line 118, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(2n+3) { margin-right: 0; }
-  /* line 120, sass/style.scss */
+  /* line 122, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(n+3) { margin-top: -30px; } }
-@media only screen and (max-width: 1347px) and (min-width: 1078px) { /* line 108, sass/style.scss */
+@media only screen and (max-width: 1347px) and (min-width: 1078px) { /* line 110, sass/style.scss */
   .csstransforms .diamonds { max-width: 1000px; }
-  /* line 112, sass/style.scss */
+  /* line 114, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(7n+5) { margin-left: 100px; }
-  /* line 116, sass/style.scss */
+  /* line 118, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(7n+4) { margin-right: 0; }
-  /* line 120, sass/style.scss */
+  /* line 122, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(n+4) { margin-top: -30px; } }
-@media only screen and (max-width: 1077px) and (min-width: 808px) { /* line 108, sass/style.scss */
+@media only screen and (max-width: 1077px) and (min-width: 808px) { /* line 110, sass/style.scss */
   .csstransforms .diamonds { max-width: 730px; }
-  /* line 112, sass/style.scss */
+  /* line 114, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(5n+4) { margin-left: 100px; }
-  /* line 116, sass/style.scss */
+  /* line 118, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(5n+3) { margin-right: 0; }
-  /* line 120, sass/style.scss */
+  /* line 122, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(n+3) { margin-top: -30px; } }
-@media only screen and (max-width: 807px) and (min-width: 538px) { /* line 108, sass/style.scss */
+@media only screen and (max-width: 807px) and (min-width: 538px) { /* line 110, sass/style.scss */
   .csstransforms .diamonds { max-width: 460px; }
-  /* line 112, sass/style.scss */
+  /* line 114, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(3n+3) { margin-left: 100px; }
-  /* line 116, sass/style.scss */
+  /* line 118, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(3n+2) { margin-right: 0; }
-  /* line 120, sass/style.scss */
+  /* line 122, sass/style.scss */
   .csstransforms .diamonds > li:nth-child(n+2) { margin-top: -30px; } }
-/* line 145, sass/style.scss */
+/* line 147, sass/style.scss */
 .csstransforms .diamonds { padding: 39px 0; }
-@media only screen and (max-width: 537px) { /* line 145, sass/style.scss */
+@media only screen and (max-width: 537px) { /* line 147, sass/style.scss */
   .csstransforms .diamonds { padding: 0; text-align: center; } }
-/* line 152, sass/style.scss */
+/* line 154, sass/style.scss */
 .no-csstransforms .diamonds { max-width: 1060px; }
-/* line 155, sass/style.scss */
+/* line 157, sass/style.scss */
 .diamonds > li { display: inline-block; font-size: 18px; margin-right: 60px; }
-/* line 160, sass/style.scss */
+/* line 162, sass/style.scss */
 .diamonds > li:hover a { background: #28282e; color: #ffffff; }
-/* line 166, sass/style.scss */
+/* line 168, sass/style.scss */
 .diamonds > li.active a { background: #28282e; color: #ffffff; }
-/* line 171, sass/style.scss */
+/* line 173, sass/style.scss */
 .diamonds > li a { background: #ffffff; color: #474747; font-weight: normal; text-transform: uppercase; }
-/* line 176, sass/style.scss */
+/* line 178, sass/style.scss */
 .diamonds > li a h4 { font-size: 16px; font-weight: normal; }
-/* line 180, sass/style.scss */
+/* line 182, sass/style.scss */
 .diamonds > li a i { color: #ef443a; display: block; font-size: 25px; height: 30px; margin: 0 auto; width: 30px; }
-@media only screen and (max-width: 537px) { /* line 155, sass/style.scss */
+@media only screen and (max-width: 537px) { /* line 157, sass/style.scss */
   .diamonds > li { margin-right: 0; width: 110px; } }
-/* line 193, sass/style.scss */
+/* line 195, sass/style.scss */
 .no-csstransforms .diamonds > li { margin: 0 20px 20px 0; }
-/* line 197, sass/style.scss */
+/* line 199, sass/style.scss */
 .diamonds .diamond { -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; display: block; height: 140px; overflow: hidden; -webkit-perspective: 1000; -moz-perspective: 1000; perspective: 1000; position: relative; text-decoration: none; width: 140px; }
-/* line 207, sass/style.scss */
+/* line 209, sass/style.scss */
 .csstransforms .diamonds .diamond { overflow: hidden; -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
-@media only screen and (max-width: 537px) { /* line 207, sass/style.scss */
+@media only screen and (max-width: 537px) { /* line 209, sass/style.scss */
   .csstransforms .diamonds .diamond { height: 110px; -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); width: 110px; } }
-/* line 218, sass/style.scss */
+/* line 220, sass/style.scss */
 .diamonds .content { display: table-cell; height: 140px; padding: 0 10px; -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); text-align: center; vertical-align: middle; width: 140px; }
-@media only screen and (max-width: 537px) { /* line 227, sass/style.scss */
+@media only screen and (max-width: 537px) { /* line 229, sass/style.scss */
   .csstransforms .diamonds .content { height: 110px; -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); width: 110px; } }
 
 /* @end */
 /* Fonts */
 @font-face { font-family: Flaticon; src: url(fonts/flaticon.eot); src: url(fonts/flaticon.eot#iefix) format("embedded-opentype"), url(fonts/flaticon.woff) format("woff"), url(fonts/flaticon.ttf) format("truetype"), url(fonts/flaticon.svg) format("svg"); font-weight: normal; font-style: normal; }
-/* line 253, sass/style.scss */
+/* line 255, sass/style.scss */
 .flaticon-bebidas:before { content: "\e000"; font-family: Flaticon; }
 
-/* line 257, sass/style.scss */
+/* line 259, sass/style.scss */
 .flaticon-esfihas-salgadas:before { content: "\e001"; font-family: Flaticon; }
 
-/* line 261, sass/style.scss */
+/* line 263, sass/style.scss */
 .flaticon-esfihas-especiais:before { content: "\e002"; font-family: Flaticon; }
 
-/* line 265, sass/style.scss */
+/* line 267, sass/style.scss */
 .flaticon-esfihas-doces:before { content: "\e003"; font-family: Flaticon; }
 
-/* line 269, sass/style.scss */
+/* line 271, sass/style.scss */
 .flaticon-sobremesas:before { content: "\e004"; font-family: Flaticon; }
 
 /* classes */
-/* line 274, sass/style.scss */
-.bg-paralax { position: absolute; top: 0; left: 0; height: 100%; bottom: 0; right: 0; width: 100%; z-index: 1; }
+/* line 276, sass/style.scss */
+.bg-paralax { position: absolute; top: 0; left: 0; height: 100%; bottom: 0; right: 0; width: 100%; z-index: 0; }
+
+/* line 287, sass/style.scss */
+.product-list ul { list-style: none; }
+/* line 289, sass/style.scss */
+.product-list ul li { margin: 15px 0; }
+/* line 291, sass/style.scss */
+.product-list ul li h4 { color: #ffffff; }
+/* line 294, sass/style.scss */
+.product-list ul li p { color: #ffffff; }
+/* line 296, sass/style.scss */
+.product-list ul li p span { color: #ffffff; }
 
 /* Tags Ajusts */
-/* line 285, sass/style.scss */
+/* line 304, sass/style.scss */
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 288, sass/style.scss */
+/* line 307, sass/style.scss */
 body { overflow-x: hidden; }
 
-/* line 289, sass/style.scss */
+/* line 308, sass/style.scss */
 h2 { font-size: 54px; }
 
 /* 0. Navbar */
 /* 1. Header */
-/* line 293, sass/style.scss */
+/* line 312, sass/style.scss */
 header#header { height: 768px; background: #000 fixed top center; padding: 183px 0; }
-/* line 297, sass/style.scss */
+/* line 316, sass/style.scss */
 header#header h2 { margin-bottom: 40px; color: #ffffff; font-size: 40px; }
-/* line 301, sass/style.scss */
+/* line 320, sass/style.scss */
 header#header h2 span { color: #ffffff; display: block; font-size: 40px; letter-spacing: 2px; }
-/* line 307, sass/style.scss */
+/* line 326, sass/style.scss */
 header#header h2 small { color: #ffffff; display: block; font-size: 48px; letter-spacing: 4px; }
-/* line 313, sass/style.scss */
+/* line 332, sass/style.scss */
 header#header h2 strong { color: #ffffff; font-size: 60px; }
-/* line 318, sass/style.scss */
-header#header .btn { background-color: transparent; color: white; border: 1px solid; font-size: 20px; border-radius: 2px; font-weight: bold !important; }
+/* line 337, sass/style.scss */
+header#header .btn { background-color: transparent; color: white; border: 1px solid #ffffff; padding: 7px 25px; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; font-size: 20px; font-weight: bold !important; }
 
 /* 2. Article */
 /* 2.1.Cardapio */
-/* line 332, sass/style.scss */
+/* line 352, sass/style.scss */
 section#cardapio { background: #f6f6f6 url("img/patterns.cardapio.png") repeat; }
-/* line 335, sass/style.scss */
-section#cardapio .diamonds-tabs .container { height: 384px; padding: 117px 0; }
-/* line 341, sass/style.scss */
-section#cardapio .tab-content .container { height: 768px; padding: 309px 0; }
-/* line 347, sass/style.scss */
+/* line 355, sass/style.scss */
+section#cardapio .diamonds-tabs .container { padding: 125px 0; }
+/* line 361, sass/style.scss */
+section#cardapio .tab-content .tab-pane { position: relative; top: 0; left: 0; padding: 117px 0; }
+/* line 370, sass/style.scss */
 section#cardapio h2 strong { color: #ef443a; }
-/* line 351, sass/style.scss */
-section#cardapio h3 { color: #ef443a; }
+/* line 374, sass/style.scss */
+section#cardapio h3 { color: #ef443a; font-size: 34px; }
+/* line 377, sass/style.scss */
+section#cardapio h3 i { font-size: 100%; }
 
 /* 2.2.Sobre */
-/* line 356, sass/style.scss */
+/* line 384, sass/style.scss */
 section#sobre { height: 768px; padding: 199px 0; background: #f6f6f6; }
 
 /* 2.3.Promocoes */
-/* line 362, sass/style.scss */
+/* line 390, sass/style.scss */
 section#promocoes { background: #28282e; height: 768px; padding: 32px 0; }
-/* line 366, sass/style.scss */
+/* line 394, sass/style.scss */
 section#promocoes h2 { color: #fff; }
-/* line 369, sass/style.scss */
+/* line 397, sass/style.scss */
 section#promocoes p { color: #fff; margin-bottom: 50px; }
-/* line 370, sass/style.scss */
+/* line 398, sass/style.scss */
 section#promocoes .carousel-indicators { bottom: -31px; }
-/* line 372, sass/style.scss */
+/* line 400, sass/style.scss */
 section#promocoes .carousel-indicators li { background-color: #1E1D22; border-color: #28282e; }
-/* line 374, sass/style.scss */
+/* line 402, sass/style.scss */
 section#promocoes .carousel-indicators li.active { background-color: #ffffff; }
 
 /* 3.Footer */
-/* line 382, sass/style.scss */
+/* line 410, sass/style.scss */
 footer#footer { background: #28282e; }
-/* line 384, sass/style.scss */
+/* line 412, sass/style.scss */
 footer#footer #localizacao { background: #ef443a; color: #ffffff; }
-/* line 386, sass/style.scss */
+/* line 414, sass/style.scss */
 footer#footer #localizacao .container { height: 90px; padding: 30px 0; }
-/* line 390, sass/style.scss */
+/* line 418, sass/style.scss */
 footer#footer #localizacao a { display: block; font-size: 20px; text-transform: none; text-decoration: none; color: #fff; }
-/* line 401, sass/style.scss */
+/* line 428, sass/style.scss */
+footer#footer #contato { padding: 20px 0; }
+/* line 430, sass/style.scss */
 footer#footer #contato li { color: #fff; list-style: none; }
-/* line 406, sass/style.scss */
-footer#footer #contato p { padding: 50px; }
-/* line 409, sass/style.scss */
+/* line 434, sass/style.scss */
+footer#footer #contato p { margin: 0; padding: 0; }
+/* line 438, sass/style.scss */
+footer#footer #contato a { color: #ffffff; }
+/* line 441, sass/style.scss */
 footer#footer #contato .contato { height: 120px; vertical-align: middle; }
 
 /* 4.Agencia */
-/* line 418, sass/style.scss */
+/* line 450, sass/style.scss */
 #copy { background: #000000; padding: 10px 0; }
