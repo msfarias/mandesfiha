@@ -32,6 +32,46 @@
     <?php wp_head(); ?>
   </head>
   <body role="document">
+
+    <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>" title="<?php the_SEO( 'title', get_the_ID() ) ?>">
+            <img src="<?php echo get_template_directory_uri().'/'; ?>img/apple-touch-icon.png" alt="<?php the_SEO( 'title', get_the_ID() ) ?>" class="img-responsive">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+          <?php
+            wp_nav_menu(
+              array(
+                'theme_location'  => 'menu-topo',
+                'depth'           => 2,
+                'menu'            => '',
+                'container'       => false,
+                'container_class' => '',
+                'container_id'    => '',
+                'menu_class'      => 'nav navbar-nav navbar-right',
+                'fallback_cb'     => '',
+                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                //Process nav menu using our custom nav walker
+                'walker' => new wp_bootstrap_navwalker()
+              )
+            );
+          ?>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <?php if( is_front_page() ): ?>
     <header id="header" role="presentation" >
       <div class="container">
         <div class="row">
@@ -47,10 +87,11 @@
 
           </div>
           <a href="" class="col-md-4">
-            <img src="<?php echo get_template_directory_uri().'/'; ?>img/mandaesfiha.png" alt="logo" class="logo">
+            <img src="<?php echo get_template_directory_uri().'/'; ?>img/mandesfiha.png" alt="logo" class="img-responsive">
           </a>
         </div>
         <div class="col-md-1">
         </div>
       </div>
     </header>
+    <?php endif; ?>

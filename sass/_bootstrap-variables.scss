@@ -385,7 +385,9 @@
 //=== Inverted navbar
 // Reset inverted navbar basics
 // $navbar-inverse-color:                      lighten($gray-light, 15%)
+// $navbar-inverse-color:                      lighten($gray-light, 15%)
 // $navbar-inverse-bg:                         #222
+$navbar-inverse-bg:                         transparentize(#000000, .3);
 // $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%)
 
 // Inverted navbar links

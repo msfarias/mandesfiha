@@ -300,6 +300,12 @@ $url_4: url(fonts/flaticon.svg);
     }
   }
 }
+.navbar-brand {
+  padding:0;
+  > img {
+    width:25%;
+  }
+}
 /* Tags Ajusts */
 * {
   @include box-sizing(border-box);

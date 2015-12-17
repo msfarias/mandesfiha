@@ -2710,7 +2710,7 @@ tbody.collapse.in { display: table-row-group; }
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus { color: #ccc; }
 
 /* line 531, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse { background-color: #222; border-color: #090909; }
+.navbar-inverse { background-color: rgba(0, 0, 0, 0.7); border-color: rgba(0, 0, 0, 0.7); }
 /* line 535, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-brand { color: #9d9d9d; }
 /* line 537, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -2722,7 +2722,7 @@ tbody.collapse.in { display: table-row-group; }
 /* line 552, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { color: #fff; background-color: transparent; }
 /* line 559, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus { color: #fff; background-color: #090909; }
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus { color: #fff; background-color: rgba(0, 0, 0, 0.7); }
 /* line 567, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus { color: #444; background-color: transparent; }
 /* line 577, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -2732,19 +2732,19 @@ tbody.collapse.in { display: table-row-group; }
 /* line 583, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-toggle .icon-bar { background-color: #fff; }
 /* line 588, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { border-color: #101010; }
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { border-color: rgba(0, 0, 0, 0.7); }
 /* line 596, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus { background-color: #090909; color: #fff; }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus { background-color: rgba(0, 0, 0, 0.7); color: #fff; }
 @media (max-width: 767px) { /* line 607, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header { border-color: #090909; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header { border-color: rgba(0, 0, 0, 0.7); }
   /* line 610, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu .divider { background-color: #090909; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu .divider { background-color: rgba(0, 0, 0, 0.7); }
   /* line 613, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a { color: #9d9d9d; }
   /* line 615, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus { color: #fff; background-color: transparent; }
   /* line 622, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus { color: #fff; background-color: #090909; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus { color: #fff; background-color: rgba(0, 0, 0, 0.7); }
   /* line 630, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus { color: #444; background-color: transparent; } }
 /* line 641, js/vendor/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -5703,84 +5703,89 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 /* line 296, sass/style.scss */
 .product-list ul li p span { color: #ffffff; }
 
+/* line 303, sass/style.scss */
+.navbar-brand { padding: 0; }
+/* line 305, sass/style.scss */
+.navbar-brand > img { width: 25%; }
+
 /* Tags Ajusts */
-/* line 304, sass/style.scss */
+/* line 310, sass/style.scss */
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 307, sass/style.scss */
+/* line 313, sass/style.scss */
 body { overflow-x: hidden; }
 
-/* line 308, sass/style.scss */
+/* line 314, sass/style.scss */
 h2 { font-size: 54px; }
 
 /* 0. Navbar */
 /* 1. Header */
-/* line 312, sass/style.scss */
+/* line 318, sass/style.scss */
 header#header { height: 768px; background: #000 fixed top center; padding: 183px 0; }
-/* line 316, sass/style.scss */
+/* line 322, sass/style.scss */
 header#header h2 { margin-bottom: 40px; color: #ffffff; font-size: 40px; }
-/* line 320, sass/style.scss */
-header#header h2 span { color: #ffffff; display: block; font-size: 40px; letter-spacing: 2px; }
 /* line 326, sass/style.scss */
-header#header h2 small { color: #ffffff; display: block; font-size: 48px; letter-spacing: 4px; }
+header#header h2 span { color: #ffffff; display: block; font-size: 40px; letter-spacing: 2px; }
 /* line 332, sass/style.scss */
+header#header h2 small { color: #ffffff; display: block; font-size: 48px; letter-spacing: 4px; }
+/* line 338, sass/style.scss */
 header#header h2 strong { color: #ffffff; font-size: 60px; }
-/* line 337, sass/style.scss */
+/* line 343, sass/style.scss */
 header#header .btn { background-color: transparent; color: white; border: 1px solid #ffffff; padding: 7px 25px; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; font-size: 20px; font-weight: bold !important; }
 
 /* 2. Article */
 /* 2.1.Cardapio */
-/* line 352, sass/style.scss */
+/* line 358, sass/style.scss */
 section#cardapio { background: #f6f6f6 url("img/patterns.cardapio.png") repeat; }
-/* line 355, sass/style.scss */
-section#cardapio .diamonds-tabs .container { padding: 125px 0; }
 /* line 361, sass/style.scss */
+section#cardapio .diamonds-tabs .container { padding: 125px 0; }
+/* line 367, sass/style.scss */
 section#cardapio .tab-content .tab-pane { position: relative; top: 0; left: 0; padding: 117px 0; }
-/* line 370, sass/style.scss */
+/* line 376, sass/style.scss */
 section#cardapio h2 strong { color: #ef443a; }
-/* line 374, sass/style.scss */
+/* line 380, sass/style.scss */
 section#cardapio h3 { color: #ef443a; font-size: 34px; }
-/* line 377, sass/style.scss */
+/* line 383, sass/style.scss */
 section#cardapio h3 i { font-size: 100%; }
 
 /* 2.2.Sobre */
-/* line 384, sass/style.scss */
+/* line 390, sass/style.scss */
 section#sobre { height: 768px; padding: 199px 0; background: #f6f6f6; }
 
 /* 2.3.Promocoes */
-/* line 390, sass/style.scss */
+/* line 396, sass/style.scss */
 section#promocoes { background: #28282e; height: 768px; padding: 32px 0; }
-/* line 394, sass/style.scss */
-section#promocoes h2 { color: #fff; }
-/* line 397, sass/style.scss */
-section#promocoes p { color: #fff; margin-bottom: 50px; }
-/* line 398, sass/style.scss */
-section#promocoes .carousel-indicators { bottom: -31px; }
 /* line 400, sass/style.scss */
+section#promocoes h2 { color: #fff; }
+/* line 403, sass/style.scss */
+section#promocoes p { color: #fff; margin-bottom: 50px; }
+/* line 404, sass/style.scss */
+section#promocoes .carousel-indicators { bottom: -31px; }
+/* line 406, sass/style.scss */
 section#promocoes .carousel-indicators li { background-color: #1E1D22; border-color: #28282e; }
-/* line 402, sass/style.scss */
+/* line 408, sass/style.scss */
 section#promocoes .carousel-indicators li.active { background-color: #ffffff; }
 
 /* 3.Footer */
-/* line 410, sass/style.scss */
+/* line 416, sass/style.scss */
 footer#footer { background: #28282e; }
-/* line 412, sass/style.scss */
-footer#footer #localizacao { background: #ef443a; color: #ffffff; }
-/* line 414, sass/style.scss */
-footer#footer #localizacao .container { height: 90px; padding: 30px 0; }
 /* line 418, sass/style.scss */
+footer#footer #localizacao { background: #ef443a; color: #ffffff; }
+/* line 420, sass/style.scss */
+footer#footer #localizacao .container { height: 90px; padding: 30px 0; }
+/* line 424, sass/style.scss */
 footer#footer #localizacao a { display: block; font-size: 20px; text-transform: none; text-decoration: none; color: #fff; }
-/* line 428, sass/style.scss */
-footer#footer #contato { padding: 20px 0; }
-/* line 430, sass/style.scss */
-footer#footer #contato li { color: #fff; list-style: none; }
 /* line 434, sass/style.scss */
+footer#footer #contato { padding: 20px 0; }
+/* line 436, sass/style.scss */
+footer#footer #contato li { color: #fff; list-style: none; }
+/* line 440, sass/style.scss */
 footer#footer #contato p { margin: 0; padding: 0; }
-/* line 438, sass/style.scss */
+/* line 444, sass/style.scss */
 footer#footer #contato a { color: #ffffff; }
-/* line 441, sass/style.scss */
+/* line 447, sass/style.scss */
 footer#footer #contato .contato { height: 120px; vertical-align: middle; }
 
 /* 4.Agencia */
-/* line 450, sass/style.scss */
+/* line 456, sass/style.scss */
 #copy { background: #000000; padding: 10px 0; }
